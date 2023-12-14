@@ -519,22 +519,7 @@
     $('footer').load('../inc/footer.html')
 
    
-    $(window).scroll(function(){  
-        var scrollValue = $(window).scrollTop()
-        if(scrollValue > 300){
-            $('header').addClass('active');
-            $('header_area').addClass('active');
-
-            if($('header').hasClass('on')) {
-                $('header').addClass('on');
-            }else{
-                $('header').removeClass('on');
-            }
-
-        }else{
-            $('header').removeClass('active')  
-        }
-    })
+   
 
 
     // slider

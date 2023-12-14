@@ -70,6 +70,23 @@
 </ul>
 
 <script>
+     $(window).scroll(function(){  
+        var scrollValue = $(window).scrollTop()
+        if(scrollValue > 100){
+            $('header').addClass('active');
+            $('header_area').addClass('active');
+
+            if($('header').hasClass('on')) {
+                $('header').addClass('on');
+            }else{
+                $('header').removeClass('on');
+            }
+
+        }else{
+            $('header').removeClass('active')  
+        }
+    })
+    
     $('.menu_bar').click(function(){        
         $('.gnb_sub').toggleClass('active')
         $('header').toggleClass('on')
