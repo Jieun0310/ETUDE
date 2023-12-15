@@ -26,6 +26,10 @@
     border-radius: 100px;
 }
 
+.service_btns.on.active{
+    display: none;
+}
+
 .service_btns a:first-child{
     text-decoration: underline;
     text-decoration-thickness: 2px;
@@ -105,7 +109,7 @@
     display: block;
     font-size: 48px;
     text-align: center;
-    z-index: 1000;
+    z-index: 100;
     color: #fff;
     font-family: 'subway-regular', sans-serif;
 }

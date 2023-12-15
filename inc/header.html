@@ -21,7 +21,7 @@
 
 <ul class="gnb_sub">
     <li class="gnb_sub_title">
-        <a href="#">BRAND</a>
+        <a href="#" class="has_detail">BRAND</a>
         <ul class="gnb_sub_detail">
             <li><a href="#">About ETUDE <span>></span></a></li>
             <li><a href="#">뷰티즌 <span>></span></a></li>
@@ -32,21 +32,21 @@
     <li class="gnb_sub_title"><a href="#">MAKEUP LOOK</a></li>
     <li class="gnb_sub_title"><a href="#">FOUNDATION FACTORY</a></li>
     <li class="gnb_sub_title">
-        <a href="#">@etudeofficial</a>
+        <a href="#" class="has_detail">@etudeofficial</a>
         <ul class="gnb_sub_detail">
             <li><a href="#">Instagram <span>></span></a></li>
             <li><a href="#">Ticktok <span>></span></a></li>
         </ul>
     </li>
     <li class="gnb_sub_title">
-        <a href="#">STORE</a>
+        <a href="#" class="has_detail">STORE</a>
         <ul class="gnb_sub_detail">
             <li><a href="#">온라인 <span>></span></a></li>
             <li><a href="#">오프라인 <span>></span></a></li>
         </ul>
     </li>
     <li class="gnb_sub_title">
-        <a href="#">CONTACT</a>
+        <a href="#" class="has_detail">CONTACT</a>
         <ul class="gnb_sub_detail">
             <li><a href="#">공지사항 <span>></span></a></li>
             <li><a href="#">FAQ <span>></span></a></li>
@@ -54,14 +54,14 @@
         </ul>
     </li>
     <li class="gnb_sub_title">
-        <a href="#">MEMBERSHIP</a>
+        <a href="#" class="has_detail">MEMBERSHIP</a>
         <ul class="gnb_sub_detail">
             <li><a href="#">핑크멤버십 <span>></span></a></li>
             <li><a href="#">뷰티포인트 <span>></span></a></li>
         </ul>
     </li>
     <li class="gnb_sub_title">
-        <a href="#">뽀오얀</a>
+        <a href="#" class="has_detail">뽀오얀</a>
         <ul class="gnb_sub_detail">
             <li><a href="#">About 뽀오얀 <span>></span></a></li>
             <li><a href="#">제품보기 <span>></span></a></li>
@@ -70,23 +70,30 @@
 </ul>
 
 <script>
+   
      $(window).scroll(function(){  
         var scrollValue = $(window).scrollTop()
         if(scrollValue > 100){
             $('header').addClass('active');
-            $('header_area').addClass('active');
-
+            $('.header_area').addClass('active');
+            // $('.service_btns').addClass('on');
+            // $('.service_btns').addClass('active');
+           
+            
             if($('header').hasClass('on')) {
                 $('header').addClass('on');
+            }else if($('.service_btns').hasClass('on')){
+                $('.service_btns').addClass('on')
             }else{
                 $('header').removeClass('on');
             }
 
-        }else{
-            $('header').removeClass('active')  
+            }else{
+                $('header').removeClass('active')  
         }
     })
     
+
     $('.menu_bar').click(function(){        
         $('.gnb_sub').toggleClass('active')
         $('header').toggleClass('on')
@@ -111,3 +118,5 @@
         },
     )
 </script>
+
+
