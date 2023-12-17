@@ -316,6 +316,10 @@ padding-left: 20px;
     margin-bottom:40px;
 }
 
+.step{
+    position: relative;
+}
+
 .step .service_title{
     margin-top: 160px;
 }
@@ -324,8 +328,10 @@ padding-left: 20px;
     display: grid;
     grid-template-columns: repeat(3,2fr);
     width: 472px;
+    height: 400px;
     gap: 5px;
-    padding: 0 80px;
+    padding: 0 40px;
+    
     
 }
 
@@ -377,7 +383,8 @@ padding-left: 20px;
 
 .caution{
     width: 1400px;
-    margin: 50px auto;
+    margin-top: 400px;
+    margin-bottom: 40px;
     padding: 30px;
     background-color: #fbfbfb;
 }

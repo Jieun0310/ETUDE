@@ -1,5 +1,3 @@
-
-
 .main{
     width: 100%;
     height: 100vh;
@@ -297,7 +295,7 @@
 
 .sub_nav{
     position: sticky;
-    top: 100px;
+    top: 0px;
     display: flex;
     justify-content: space-evenly;
     background-color: #fff;

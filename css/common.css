@@ -67,7 +67,7 @@ header.on.active{
 
 
 
-.gnb{
+.gnb_list{
     display: flex;
     font-weight: bold;
     gap: 60px;
@@ -290,7 +290,7 @@ footer{
         display: flex;
     
     }
-    }
+    
     
     
     header.active{
@@ -304,10 +304,6 @@ footer{
         background-color: transparent
     }
     
-    .header_left{
-        display: block;
-        align-items: center;
-    }
     
     .logo img{
         display: block;
@@ -316,10 +312,11 @@ footer{
     }
     
     
-    .gnb{
+    .gnb_list{
         display: none;
     }
     
+
     .header_icons{
         display: flex;
         gap: 10px;
@@ -554,6 +551,9 @@ footer{
     .time{
         display: none;
     }
-   
 }
+  
+
+
+   
 
