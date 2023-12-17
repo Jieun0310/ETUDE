@@ -1,21 +1,16 @@
-header{
-    position: fixed;
-}
+
 
 .main{
     width: 100%;
     height: 100vh;
     display: flex;
+    gap: 0px;
     overflow: hidden;
 }
 
 .left{
-    position: relative;
     width: 50%;    
-    height:100%;
-    position: fixed;
-    
-    
+    height:100vh;
 }
 
 .slider{
@@ -31,8 +26,8 @@ header{
 
 .slider-nav {
     position: absolute;
-    top: 45%;
-    left: -35%;
+    top: 47%;
+    left: -18%;
     display: flex;
     transform: rotate(90deg);
 }
@@ -113,16 +108,25 @@ header{
 
 /* right */
 .right{
-    position: absolute;
+    height: 100vh;
     width: 50%; 
-    top: 100px;
-    right: 0px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
     
 }
+
+.right::-webkit-scrollbar {
+    display: none;
+  }
+
 .category{
-    position: absolute;
-    right: 80px;
+    /* position: absolute;
+    top: 100px;
+    right: 80px; */
     display: flex;
+    margin-top: 100px;
+    justify-content: right;
+    margin-right: 60px;
 }
 
 .category a{
@@ -157,7 +161,7 @@ header{
     padding: 20px 0;
     display: flex;
     align-items: center;
-    gap: 380px;
+    gap: 300px;
 }
 
 .sns_tag span{
@@ -176,7 +180,7 @@ header{
 }
 
 .colors{
-    width: 660px;
+    width: 600px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -328,21 +332,14 @@ header{
    
 }
 
+
+
 .others{
     width: 100%;
     height: 600px;
-    background-color: #9D4241;
-    position: absolute;
-    bottom:-26200px;
-    z-index: 1000;
+    padding: 60px 0;
 }
 
-.context{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
 .context h2{
     text-align: center;
     font-size: 36px;
@@ -354,6 +351,7 @@ header{
     display: flex;
     gap: 10px;
     width: 100%;
+    justify-content: center;
 
 }
 
@@ -399,18 +397,22 @@ header{
 .others_text{
     position: absolute;
     width: 300px;
-    bottom: -60px;
+    bottom: -110px;
     margin: 0 auto;
     text-align: center;
 }
 
+.others_text p{
+    font-size: 18px;
+    
+}
 .others_text span{
     display: block;
+    padding-top: 40px;
+    font-weight: bold;
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+
+
+
 
