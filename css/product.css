@@ -9,6 +9,7 @@
 }
 
 .left{
+    position: relative;
     width: 50%;    
     height:100vh;
 }
@@ -27,7 +28,7 @@
 .slider-nav {
     position: absolute;
     top: 47%;
-    left: -18%;
+    left: -38%;
     display: flex;
     transform: rotate(90deg);
 }
@@ -43,10 +44,17 @@
     position: absolute;
     top: 50%;
     left: 0%;
-    display: flex;   
-    gap: 720px;
+    display: flex;  
+    width: 50%;
     z-index: 1;
 }
+
+.arrow .xi-angle-right-thin{
+    position: absolute;
+    right: -100%;
+}
+
+
 
 .arrow i{
     background-color: rgba(0,0,0,0.4);
@@ -289,6 +297,7 @@
 
 .sub_nav{
     position: sticky;
+    top: 100px;
     display: flex;
     justify-content: space-evenly;
     background-color: #fff;
