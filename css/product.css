@@ -16,11 +16,20 @@
   height: 100%;
 }
 
+<<<<<<< HEAD
 .slider img {
   display: block;
   width: 739px;
   height: 100vh;
   background-color: rgb(238, 238, 238);
+=======
+.slider img{
+    display: block;
+    width: 739px;
+    height:100vh;
+    background-color: rgb(238, 238, 238);
+    object-fit: cover;
+>>>>>>> 65889714cdc3e21fe21ce038585f4de7ccbda21d
 }
 
 .slider-nav {
