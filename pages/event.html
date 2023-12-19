@@ -468,6 +468,8 @@
     </div>
 
     <footer></footer>
+
+    <a href="#x" class="gotop"><i class="xi-angle-up-thin"></i></a>
   </body>
 
   <script>
@@ -484,6 +486,23 @@
       } else {
         $('.service_btns').removeClass('active');
       }
+    });
+  </script>
+
+  <script>
+    // gotop
+    $(window).scroll(function () {
+      var scrollValue = $(document).scrollTop();
+
+      if (scrollValue > 300) {
+        $('.gotop').fadeIn();
+      } else {
+        $('.gotop').fadeOut();
+      }
+    });
+
+    $('.gotop').on('click', function () {
+      $('html,body').animate({ scrollTop: 0 });
     });
   </script>
 

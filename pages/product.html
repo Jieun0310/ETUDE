@@ -531,6 +531,8 @@
     </div>
 
     <footer></footer>
+
+    <a href="#x" class="gotop"><i class="xi-angle-up-thin"></i></a>
   </body>
 
   <script>
@@ -539,6 +541,23 @@
 
     // footer
     $('footer').load('../inc/footer.html');
+  </script>
+
+  <script>
+    // gotop
+    $(window).scroll(function () {
+      var scrollValue = $(document).scrollTop();
+
+      if (scrollValue > 300) {
+        $('.gotop').fadeIn();
+      } else {
+        $('.gotop').fadeOut();
+      }
+    });
+
+    $('.gotop').on('click', function () {
+      $('html,body').animate({ scrollTop: 0 });
+    });
   </script>
 
   <script>
