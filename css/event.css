@@ -109,7 +109,7 @@
   text-align: center;
   z-index: 100;
   color: #fff;
-  font-family: 'subway-regular', sans-serif;
+  font-family: 'Kalnia', serif;
 }
 
 .personal_color p {
@@ -118,7 +118,7 @@
 }
 
 .personal_color span {
-  margin-left: 560px;
+  margin-left: 660px;
 }
 
 /* service_course */
