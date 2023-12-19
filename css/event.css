@@ -98,11 +98,13 @@
 }
 
 .personal_color {
+  width: 100%;
+  display: flex;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
+  left: 25%;
+  transform: translateY(-50%);
+
   font-size: 48px;
   text-align: center;
   z-index: 100;
@@ -110,9 +112,13 @@
   font-family: 'subway-regular', sans-serif;
 }
 
+.personal_color p {
+  position: fixed;
+  display: inline;
+}
+
 .personal_color span {
-  margin-left: 10px;
-  width: 200px;
+  margin-left: 560px;
 }
 
 /* service_course */
