@@ -105,6 +105,11 @@
     font-size: 16px;
   }
 
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    bottom: -550px !important;
+  }
+
   .makeup_look {
     position: relative;
     background-image: url(../images/makeup_look_main_bg_2208.jpg);
@@ -338,11 +343,19 @@
     justify-content: space-between;
     margin: 20px;
   }
+  .gift .titles h2 {
+    font-size: 20px;
+  }
 
   .gift .title {
     display: flex;
     align-items: center;
     gap: 5px;
+  }
+  .gift .title img {
+    display: block;
+    width: 24px;
+    object-fit: contain;
   }
 
   .gift .m_title {
@@ -404,6 +417,12 @@
     background-image: initial;
   }
 
+  .new .title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
   .new .titles p {
     display: none;
   }
@@ -433,7 +452,7 @@
     height: 24px;
   }
   .new .title h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .new_products {
